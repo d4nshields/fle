@@ -13,7 +13,7 @@ Each feature in the FLE Framework is designed as an independent module that can 
 Features in the FLE Framework have a public interface that includes the following functions:
 
 - `initialize()`: Set up the feature when it's loaded.
-- `startSession()`: Activates the feature.
+- `startSession(context: Context)`: A function that activates the feature, given some context.
 - `endSession()`: Deactivates the feature.
 - `getUIRoute()`: Returns a unique route to navigate to the feature's UI.
 - `getUIMenuPath()`: Returns a path to place a link/button to the feature in the navigation menu.
