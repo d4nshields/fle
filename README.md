@@ -4,7 +4,11 @@ The FLE Framework is an innovative system for structuring applications in a modu
 
 ## Concept
 
-The main concept of the FLE Framework is to create a base application or "shell" whose primary responsibility is to embed features and deliver messages to those features based on their state (ON or OFF). When a feature is OFF, the application may provide some kind of default content.
+The main concept of the FLE Framework is to create a base application or "shell" whose primary responsibility is to embed features and deliver messages to those features based on their state (ON or OFF). When a feature is OFF, the application may provide some kind of default behaviour.
+
+### Behaviour
+
+Module behaviour embodies a strict requirement for modules to pass only valid data types or valid error types.    Unsafe modules are discouraged, and teams focussing their development on a single module, should strategise their programming effort to stockpile the module boundaries with edge-case test cases aligned specifically to defend the module boundaries from invalid data originating from elsewhere.
 
 Each feature in the FLE Framework is designed as an independent module that can be switched ON or OFF. The state of the feature is managed through a feature flag. 
 
